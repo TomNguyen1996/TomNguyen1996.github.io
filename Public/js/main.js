@@ -20,6 +20,10 @@ const answer_yes = "Yes";
 
 const no_button = document.getElementById("no-button");
 const yes_button = document.getElementById("yes-button");
+const message = document.getElementsByClassName('message');
+
+
+
 
 let i  =  1;
 let size = 50;
@@ -57,6 +61,19 @@ no_button.addEventListener('click', () => {
     }
 
 
+});
+
+yes_button.addEventListener('click', () => {
+    // change banner gif path
+    let banner = document.getElementById('banner');
+    banner.src = "public/images/yes.gif";
+    refreshBanner();
+    // hide buttons div
+    let buttons = document.getElementsByClassName('buttons')[0];
+    buttons.style.display = "none";
+    // show message div
+    let message = document.getElementsByClassName('message')[0];
+    message.style.visibility = "visible";
 });
 
 
