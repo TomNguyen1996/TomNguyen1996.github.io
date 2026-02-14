@@ -33,7 +33,7 @@ no_button.addEventListener('click', () => {
 
     let banner = document.getElementById("banner");
     if(clicks == 0){
-        banner.src = "Public/images/no.gif";
+        banner.src = "./Public/images/no.gif";
         refreshBanner();
     }
 
@@ -66,7 +66,7 @@ no_button.addEventListener('click', () => {
 yes_button.addEventListener('click', () => {
     // change banner gif path
     let banner = document.getElementById('banner');
-    banner.src = "Public/images/yes.gif";
+    banner.src = "./Public/images/yes.gif";
     refreshBanner();
     // hide buttons div
     let buttons = document.getElementsByClassName('buttons')[0];
@@ -74,6 +74,7 @@ yes_button.addEventListener('click', () => {
     // show message div
     let message = document.getElementsByClassName('message')[0];
     message.style.display = "block";
+
 });
 
 
