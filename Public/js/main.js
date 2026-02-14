@@ -73,7 +73,7 @@ yes_button.addEventListener('click', () => {
     buttons.style.display = "none";
     // show message div
     let message = document.getElementsByClassName('message')[0];
-    message.style.visibility = "visible";
+    message.style.display = "block";
 });
 
 
